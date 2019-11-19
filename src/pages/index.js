@@ -53,7 +53,7 @@ export default class Main extends React.Component {
           backgroundColor: '#fbe110',
           position: 'relative',
           overflow: 'hidden',
-          height: 800,
+          height: 850,
         }}
       >
         <ScrollParallax
@@ -64,7 +64,18 @@ export default class Main extends React.Component {
           Developer
         </ScrollParallax>
         <ScrollParallax
-         animation={{ x: 0, opacity: 1 }}
+         animation={{ x: 0, opacity: 2 }}
+          style={{
+            transform: 'translateX(-200px)',
+            opacity: 0,
+            color: '#000000'
+          }}
+          className="text-appear"
+        >
+          I build programs & websites with code.
+        </ScrollParallax>
+        <ScrollParallax
+         animation={{ x: 0, opacity: 2 }}
          style={{
            transform: 'translateX(300px)',
            opacity: 0,
@@ -76,9 +87,20 @@ export default class Main extends React.Component {
           Teacher
         </ScrollParallax>
         <ScrollParallax
+         animation={{ x: 0, opacity: 1 }}
+          style={{
+            transform: 'translateX(200px)',
+            opacity: 0,
+            color: '#000000'
+          }}
+          className="text-appear"
+        >
+          Geek out with me on Latin & Greek.
+        </ScrollParallax>
+        <ScrollParallax
           animation={{ x: 0, opacity: 1 }}
           style={{
-            transform: 'translateX(-300px)',
+            transform: 'translateX(-200px)',
             opacity: 0,
             backgroundColor: '#F38EAD',
             color: '#fff',
@@ -88,11 +110,33 @@ export default class Main extends React.Component {
           Volunteer
         </ScrollParallax>
         <ScrollParallax
+         animation={{ x: 0, opacity: 1 }}
+          style={{
+            transform: 'translateX(-200px)',
+            opacity: 0,
+            color: '#000000'
+          }}
+          className="text-appear"
+        >
+          I volunteer at & help run non-profit orgs.
+        </ScrollParallax>
+        <ScrollParallax
           animation={{ rotateY: 360 }}
           style={{ transform: 'perspective(200px) rotateY(0)', backgroundColor: '#0098CE' }}
           className="demo-content parallax-shape"
         >
           Dancer
+        </ScrollParallax>
+        <ScrollParallax
+         animation={{ x: 0, opacity: 1 }}
+          style={{
+            transform: 'translateX(200px)',
+            opacity: 0,
+            color: '#000000'
+          }}
+          className="text-appear"
+        >
+          Dance <span className="animate-text"></span> with me!
         </ScrollParallax>
 </div>
       <div className="pack-page"

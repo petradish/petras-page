@@ -49,23 +49,7 @@ html{
     animation-play-state: running;
   }
   
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
+ 
   
   // link css
   .logo{
@@ -138,7 +122,7 @@ html{
     width:100%;
     text-align:center;
     color:#fff;
-    font-size:3em;
+    font-size:2.5em;
     padding-top:160px;
     padding-bottom:50px;
   }
@@ -147,9 +131,39 @@ html{
     margin: 0 auto;
     height: 8em;
     background-color: #E1FF9A;
-    margin-top: 30px;
+    margin-top: 1em;
     border-radius: 50%;
   }
+  .text-appear{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 1.25em;
+      opacity: 1;
+      margin: 0 auto;
+      margin-top: -2em;
+      width: 45vw;
+  }
+  span:before {
+      content: 'Brazilian Zouk';
+      animation: animate infinite 12s;
+  }
+  @keyframes animate {
+    0%{
+        content: 'Brazilian Zouk';
+    }
+    25%{
+        content: 'Morris';
+    }
+    50%{
+        content: 'Contra';
+    }
+    75%{
+        content: 'English Country Dance';
+    }
+    100%{
+        content: 'anything';
+    }
+  }
+
   .page-title{
       font-size: 7em;
       color: #fff;
