@@ -4,13 +4,13 @@ import React from 'react';
 
 const ScrollParallax = ScrollAnim.Parallax;
 const ScrollElement = ScrollAnim.Element;
-
+const Link = ScrollAnim.Link;
 
 export default class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      css: { backgroundColor: '#174270', height: 920 },
+      css: { backgroundColor: '#3FD8B8', height: 920 },
       cssNoPosition: true,
     };
   }
@@ -104,7 +104,7 @@ export default class Main extends React.Component {
         }}
       >
         <div className="page2-title">Projects</div>
-        <ScrollParallax
+        {/* <ScrollParallax
           animation={{ translateY: 120, opacity: 1, ease: 'linear', playScale: [0, 2] }}
           style={{ transform: 'translateY(420px) scale(.8)', color: '#fff' }}
         >
@@ -133,7 +133,7 @@ export default class Main extends React.Component {
             style={{ width: 200 }}
             alt="img"
           />
-        </ScrollParallax>
+        </ScrollParallax> */}
       </div>
 
 
@@ -142,7 +142,7 @@ export default class Main extends React.Component {
           className="pack-page"
           location="Scroll-Pack"
           animation={{
-            backgroundColor: '#0097D0',
+            backgroundColor: '#3FD8B8',
             playScale: [1, 2],
             onStart: () => { this.setCss('start'); },
             onCompleteBack: () => { this.setCss('back complete'); },
@@ -171,7 +171,7 @@ export default class Main extends React.Component {
               textAlign: 'center',
             }}
           >
-            Thanks for visiting! Contact me at: petradish@gmail.com
+            Thanks for visiting! Contact me at: <a href = "mailto: petradish@gmail.com">petradish@gmail.com</a>
           </ScrollParallax>
         </ScrollParallax>
       </ScrollElement>
