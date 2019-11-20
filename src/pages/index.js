@@ -12,7 +12,7 @@ export default class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      css: { backgroundColor: '#F38EAD', height: '100vh' },
+      css: { backgroundColor: '#F38EAD', height: '100vh', width: '100vw', margin: -1 },
       cssNoPosition: true,
     };
   }
@@ -151,15 +151,14 @@ export default class Main extends React.Component {
           position: 'relative',
           textAlign: 'center',
           fontSize: 36,
+          overflow: 'hidden', width: '100vw'
         }}
       >
         <div className="page2-title">Projects</div>
         <div className="page2-description">
         <p>I mostly code in the NERDS stack: Node, Express, React/Redux & Databases with Sequel</p>
         <br></br>
-        {/* <p><a href="http://www.github.com/petradish" target="_blank" rel="noopener noreferrer" ><img src={githubLogo} style={{height: 5 + 'vh'}} alt='github'/>Github</a></p>
-        <p><a href="http://www.linkedin.com/in/petra-laohakul"target="_blank" rel="noopener noreferrer"><img src={liLogo} style={{height: 5 + 'vh'}} alt='linkedin'/>LinkedIn</a></p>
-        <p><a href="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574214708/Personal/Petra_Laohakul_Resume_yugy4q.pdf" target="_blank" rel="noopener noreferrer" ><img src={portrait} alt='petra' style={{height: 5 + 'vh', marginRight: .5 + 'vw'}}/>Resume</a></p> */}
+      
         </div>
         <ScrollParallax
           animation={{ x: -300, translateY: -40, opacity: 1, ease: 'linear', playScale: [0, 1.2] }}
@@ -173,7 +172,7 @@ export default class Main extends React.Component {
         </ScrollParallax>
         <ScrollParallax
           animation={{ x: 300, translateY: -150, opacity: 1, ease: 'linear', playScale: [0, 2] }}
-          style={{ transform: 'translateY(60px) scale(.8)', color: '#fff' }}
+          style={{ transform: 'translateY(60px)', color: '#fff'}}
         >
           <a href='http://cindr.herokuapp.com' target="_blank" rel="noopener noreferrer"><img
             src="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574211229/Personal/UNADJUSTEDNONRAW_thumb_5_dzwrro.jpg"
@@ -183,7 +182,7 @@ export default class Main extends React.Component {
         </ScrollParallax>
         <ScrollParallax
           animation={{ x: 200, translateY: -300, opacity: 1, ease: 'linear', playScale: [0, 1.5] }}
-          style={{ transform: 'translateY(100px) scale(.9)', color: '#fff' }}
+          style={{ transform: 'translateY(100px)', color: '#fff' }}
         >
         <a href='http://github.com/The-Outlaws/Cindr2' target="_blank" rel="noopener noreferrer" >
           <img
@@ -196,7 +195,7 @@ export default class Main extends React.Component {
       </div>
 
 
-      <ScrollElement style={{ height: '200vh' }} id="Scroll-Pack">
+      <ScrollElement style={{ height: '200vh', width: '100vw' }} id="Scroll-Pack">
         <ScrollParallax
           className="pack-page"
           location="Scroll-Pack"
@@ -210,11 +209,11 @@ export default class Main extends React.Component {
           style={this.state.css}
         >
           <ScrollParallax
-            animation={{ translateX: '0%', playScale: [1, 2] }}
+            animation={{ translateX: '0vw', playScale: [1, 2] }}
             style={{
-              transform: 'translateX(-100%)',
+              transform: 'translateX(-100vw)',
               backgroundColor: '#3FD8B8',
-              width: '100%',
+              width: '100vw',
               height: '100vh',
               position: 'fixed',
             }}
