@@ -11,7 +11,7 @@ export default class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      css: { backgroundColor: '#F38EAD', height: 900 },
+      css: { backgroundColor: '#F38EAD', height: '100vh' },
       cssNoPosition: true,
     };
   }
@@ -80,7 +80,7 @@ export default class Main extends React.Component {
          style={{
            transform: 'translateX(300px)',
            opacity: 0,
-           backgroundColor: '#F38EAD',
+           backgroundColor: '#3FD8B8',
            color: '#fff',
          }}
          className="demo-content parallax-shape"
@@ -183,7 +183,7 @@ export default class Main extends React.Component {
         <a href='http://github.com/The-Outlaws/Cindr2' target="_blank" rel="noopener noreferrer" >
           <img
             src="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574212280/Personal/CindrStack_wo4g4r.png"
-            style={{ width: 300 }}
+            style={{ width: 280 }}
             alt="Cindr Repo"
           /></a>
         </ScrollParallax>
@@ -191,7 +191,7 @@ export default class Main extends React.Component {
       </div>
 
 
-      <ScrollElement style={{ height: 2000 }} id="Scroll-Pack">
+      <ScrollElement style={{ height: '200vh' }} id="Scroll-Pack">
         <ScrollParallax
           className="pack-page"
           location="Scroll-Pack"
@@ -210,8 +210,8 @@ export default class Main extends React.Component {
               transform: 'translateX(-100%)',
               backgroundColor: '#3FD8B8',
               width: '100%',
-              height: '100%',
-              position: 'absolute',
+              height: '100vh',
+              position: 'fixed',
             }}
             location="Scroll-Pack"
           />
@@ -225,7 +225,6 @@ export default class Main extends React.Component {
               width: "100%"
             }}
           >
-          
             <div className='contact-text'>Get in touch at <a href = "mailto: petradish@gmail.com">petradish@gmail.com</a></div>
           </ScrollParallax>
   
