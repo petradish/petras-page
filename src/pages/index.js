@@ -151,7 +151,7 @@ export default class Main extends React.Component {
           position: 'relative',
           textAlign: 'center',
           fontSize: 36,
-          overflow: 'hidden', width: '100vw'
+          overflow: 'hidden', width: '100vw', height: '150vh'
         }}
       >
         <div className="page2-title">Projects</div>
@@ -166,7 +166,7 @@ export default class Main extends React.Component {
         >
           <a href='http://octopuss-garden.herokuapp.com' target="_blank" rel="noopener noreferrer" ><img
             src="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574211219/Personal/UNADJUSTEDNONRAW_thumb_4_fudcjc.jpg"
-            style={{ width: 300 }}
+            style={{ width: '35vw' }}
             alt="Octopuss-Garden"
           /></a>
         </ScrollParallax>
@@ -176,7 +176,7 @@ export default class Main extends React.Component {
         >
           <a href='http://cindr.herokuapp.com' target="_blank" rel="noopener noreferrer"><img
             src="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574211229/Personal/UNADJUSTEDNONRAW_thumb_5_dzwrro.jpg"
-            style={{ width: 400 }}
+            style={{ width: '35vw' }}
             alt="Cindr"
           /></a>
         </ScrollParallax>
@@ -187,7 +187,7 @@ export default class Main extends React.Component {
         <a href='http://github.com/The-Outlaws/Cindr2' target="_blank" rel="noopener noreferrer" >
           <img
             src="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574212280/Personal/CindrStack_wo4g4r.png"
-            style={{ width: 280 }}
+            style={{ width: '35vw' }}
             alt="Cindr Repo"
           /></a>
         </ScrollParallax>
