@@ -152,9 +152,9 @@ export default class Main extends React.Component {
         <div className="page2-description">
         <p>I mostly code in the NERDS stack: Node, Express, React/Redux & Databases with Sequel</p>
         <br></br>
-        <p><a href="http://www.github.com/petradish" target="_blank" rel="noopener noreferrer" ><img src={githubLogo} style={{height: 5 + 'vh'}} alt='github'/>Github</a></p>
+        {/* <p><a href="http://www.github.com/petradish" target="_blank" rel="noopener noreferrer" ><img src={githubLogo} style={{height: 5 + 'vh'}} alt='github'/>Github</a></p>
         <p><a href="http://www.linkedin.com/in/petra-laohakul"target="_blank" rel="noopener noreferrer"><img src={liLogo} style={{height: 5 + 'vh'}} alt='linkedin'/>LinkedIn</a></p>
-        <p><a href="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574214708/Personal/Petra_Laohakul_Resume_yugy4q.pdf" target="_blank" rel="noopener noreferrer" ><img src={portrait} alt='petra' style={{height: 5 + 'vh', marginRight: .5 + 'vw'}}/>Resume</a></p>
+        <p><a href="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574214708/Personal/Petra_Laohakul_Resume_yugy4q.pdf" target="_blank" rel="noopener noreferrer" ><img src={portrait} alt='petra' style={{height: 5 + 'vh', marginRight: .5 + 'vw'}}/>Resume</a></p> */}
         </div>
         <ScrollParallax
           animation={{ x: -300, translateY: -40, opacity: 1, ease: 'linear', playScale: [0, 1.2] }}
@@ -222,6 +222,7 @@ export default class Main extends React.Component {
               transform: 'translateY(300px)',
               color: '#fbe110',
               textAlign: 'center',
+              width: "100%"
             }}
           >
           
@@ -230,16 +231,18 @@ export default class Main extends React.Component {
   
           
           <ScrollParallax
-         animation={{ y: 25, x: 100, opacity: 1 }}
+         animation={{ y: 25, x: 0, opacity: 1 }}
           style={{
-            transform: 'translateX(50vw)',
+            transform: 'translateX(0)',
             opacity: 0,
-            color: '#621ac1'
+            color: '#621ac1',
+            textAlign: "center",
+            width: "100%"
           }}
           className="text-appear"
         >
-          <Link to="/about">About Me</Link><span> | </span><a href="http://www.github.com/petradish" target="_blank" rel="noopener noreferrer" ><img src={githubLogo} style={{height: 4 + 'vh'}} alt='github'/>Github</a>
-          <span> | </span><a href="http://www.linkedin.com/in/petra-laohakul"target="_blank" rel="noopener noreferrer"><img src={liLogo} style={{height: 4 + 'vh'}} alt='linkedin'/>LinkedIn</a>
+          <Link to="/about">About Me</Link><span> | </span><a href="http://www.github.com/petradish" target="_blank" rel="noopener noreferrer" ><img src={githubLogo} style={{height: 4 + 'vh', marginRight: .5 + 'vw'}} alt='github'/>Github</a>
+          <span> | </span><a href="http://www.linkedin.com/in/petra-laohakul"target="_blank" rel="noopener noreferrer"><img src={liLogo} style={{height: 4 + 'vh', marginRight: .5 + 'vw'}} alt='linkedin'/>LinkedIn</a>
           <span> | </span><a href="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574214708/Personal/Petra_Laohakul_Resume_yugy4q.pdf" target="_blank" rel="noopener noreferrer" ><img src={portrait} alt='petra' style={{height: 4 + 'vh', marginRight: .5 + 'vw'}}/>Resume</a>
         </ScrollParallax>
 
