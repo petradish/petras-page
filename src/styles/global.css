@@ -11,7 +11,7 @@ html{
       display: none;
     }
   h1 {
-    margin: 13px;
+    margin-top: 10px;
   }
   p {
     margin: 0px;
@@ -67,15 +67,12 @@ html{
     padding-top: 1vh;
     text-align: center;
   }
-  .page2-description a {
+  /* .page2-description a {
     color: white;
     text-decoration: none;
     font-size: .5em;
-  }
-  a:hover {
-    color: #fbe110;
-    transition: 1s ease;
-  }
+  } */
+  
   .demo-content{
     margin: 0 auto;
     height: 8em;
@@ -92,10 +89,14 @@ html{
       margin-top: -2em;
       width: 45vw;
   }
-  .text-appear a{
+.text-appear a{
     text-decoration: none;
     font-size: 1em;
     color: white;
+  }
+ a:hover {
+    color: #fbe110;
+    transition: 1s ease;
   }
   #animate-text::before {
       content: 'Brazilian Zouk';
