@@ -1,7 +1,8 @@
 import ScrollAnim from 'rc-scroll-anim';
 import React from 'react';
-
-
+import githubLogo from '../static/GitHub-Mark-64px.png'
+import liLogo from '../static/LI-In-Bug.png'
+import portrait from '../static/portrait.jpg'
 const ScrollParallax = ScrollAnim.Parallax;
 const ScrollElement = ScrollAnim.Element;
 const Link = ScrollAnim.Link;
@@ -40,7 +41,7 @@ export default class Main extends React.Component {
           </div>
           <ScrollParallax
           animation={{ opacity: 1, scaleX: 1, scaleY: 1,  }}
-          style={{ opacity: 0, paddingTop: 2, fontSize: 20, transform: 'scale(0)', }}
+          style={{ opacity: 0, paddingTop: 2, fontSize: 18, transform: 'scale(0)', }}
           className="text-description"
         >
            Developer | Teacher | Volunteer | Dancer
@@ -53,7 +54,7 @@ export default class Main extends React.Component {
           backgroundColor: '#fbe110',
           position: 'relative',
           overflow: 'hidden',
-          height: 850,
+          height: 900,
         }}
       >
         <ScrollParallax
@@ -68,7 +69,7 @@ export default class Main extends React.Component {
           style={{
             transform: 'translateX(-200px)',
             opacity: 0,
-            color: '#000000'
+            color: '#621ac1'
           }}
           className="text-appear"
         >
@@ -91,7 +92,7 @@ export default class Main extends React.Component {
           style={{
             transform: 'translateX(200px)',
             opacity: 0,
-            color: '#000000'
+            color: '#621ac1'
           }}
           className="text-appear"
         >
@@ -114,7 +115,7 @@ export default class Main extends React.Component {
           style={{
             transform: 'translateX(-200px)',
             opacity: 0,
-            color: '#000000'
+            color: '#621ac1'
           }}
           className="text-appear"
         >
@@ -132,7 +133,7 @@ export default class Main extends React.Component {
           style={{
             transform: 'translateX(200px)',
             opacity: 0,
-            color: '#000000'
+            color: '#621ac1'
           }}
           className="text-appear"
         >
@@ -148,36 +149,45 @@ export default class Main extends React.Component {
         }}
       >
         <div className="page2-title">Projects</div>
-        {/* <ScrollParallax
-          animation={{ translateY: 120, opacity: 1, ease: 'linear', playScale: [0, 2] }}
-          style={{ transform: 'translateY(420px) scale(.8)', color: '#fff' }}
+        <div className="page2-description">
+        <p>I mostly code in the NERDS stack: Node, Express, React/Redux & Databases with Sequel</p>
+        <br></br>
+        <p><a href="http://www.github.com/petradish" target="_blank" ><img src={githubLogo} style={{height: 5 + 'vh'}}/>Github</a></p>
+        <p><a href="http://www.linkedin.com/in/petra-laohakul"target="_blank" ><img src={liLogo} style={{height: 5 + 'vh'}}/>LinkedIn</a></p>
+        <p><a href="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574214708/Personal/Petra_Laohakul_Resume_yugy4q.pdf" target="_blank" ><img src={portrait} style={{height: 5 + 'vh', marginRight: .5 + 'vw'}}/>Resume</a></p>
+        </div>
+        <ScrollParallax
+          animation={{ x: -300, translateY: -40, opacity: 1, ease: 'linear', playScale: [0, 1.2] }}
+          style={{ transform: 'translateY(40px)', color: '#fff' }}
         >
-          <img
-            src="https://os.alipayobjects.com/rmsportal/CrVCkwvtTQQvQHL.png"
-            style={{ width: 100 }}
-            alt="img"
-          />
+          <a href='http://octopuss-garden.herokuapp.com' target="_blank" ><img
+            src="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574211219/Personal/UNADJUSTEDNONRAW_thumb_4_fudcjc.jpg"
+            style={{ width: 300 }}
+            alt="Octopuss-Garden"
+          /></a>
         </ScrollParallax>
         <ScrollParallax
-          animation={{ translateY: 20, opacity: 1, ease: 'linear', playScale: [0, 1.5] }}
-          style={{ transform: 'translateY(380px) scale(.9)', color: '#fff' }}
+          animation={{ x: 300, translateY: -150, opacity: 1, ease: 'linear', playScale: [0, 2] }}
+          style={{ transform: 'translateY(60px) scale(.8)', color: '#fff' }}
         >
-          <img
-            src="https://os.alipayobjects.com/rmsportal/sfmdyWNlweIvfUh.png"
-            style={{ width: 150 }}
-            alt="img"
-          />
+          <a href='http://cindr.herokuapp.com' target="_blank" ><img
+            src="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574211229/Personal/UNADJUSTEDNONRAW_thumb_5_dzwrro.jpg"
+            style={{ width: 400 }}
+            alt="Cindr"
+          /></a>
         </ScrollParallax>
         <ScrollParallax
-          animation={{ translateY: -100, opacity: 1, ease: 'linear', playScale: [0, 1.2] }}
-          style={{ transform: 'translateY(320px)', color: '#fff' }}
+          animation={{ x: 200, translateY: -300, opacity: 1, ease: 'linear', playScale: [0, 1.5] }}
+          style={{ transform: 'translateY(100px) scale(.9)', color: '#fff' }}
         >
+        <a href='http://github.com/The-Outlaws/Cindr2' target="_blank" >
           <img
-            src="https://os.alipayobjects.com/rmsportal/sfmdyWNlweIvfUh.png"
-            style={{ width: 200 }}
-            alt="img"
-          />
-        </ScrollParallax> */}
+            src="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574212280/Personal/CindrStack_wo4g4r.png"
+            style={{ width: 300 }}
+            alt="Cindr Repo"
+          /></a>
+        </ScrollParallax>
+       
       </div>
 
 
@@ -206,16 +216,16 @@ export default class Main extends React.Component {
             location="Scroll-Pack"
           />
           <ScrollParallax
-            animation={[{ translateY: 0 }, { translateY: '450px' }]}
+            animation={[{ translateY: 50 }, { translateY: '450px' }]}
             location="Scroll-Pack"
             style={{
               transform: 'translateY(300px)',
-              color: '#fff',
-              fontSize: 36,
+              color: '#fbe110',
+              fontSize: '3em',
               textAlign: 'center',
             }}
           >
-            Thanks for visiting! Contact me at: <a href = "mailto: petradish@gmail.com">petradish@gmail.com</a>
+            Interested in working with me?<p>Send a message at <a href = "mailto: petradish@gmail.com">petradish@gmail.com.</a></p>
           </ScrollParallax>
         </ScrollParallax>
       </ScrollElement>

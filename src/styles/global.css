@@ -28,70 +28,6 @@ html{
     background-color:#621ac1;
   }
   
-
-  
-  .fade-enter, .fade-leave, .fade-appear {
-    animation-duration: 2s;
-  }
-  
-  .fade-enter.fade-enter-active {
-    animation-name: fadeIn;
-    animation-play-state: running;
-  }
-  
-  .fade-appear.fade-appear-active {
-    animation-name: fadeIn;
-    animation-play-state: running;
-  }
-  
-  .fade-leave.fade-leave-active {
-    animation-name: fadeOut;
-    animation-play-state: running;
-  }
-  
- 
-  
-  // link css
-  .logo{
-    float:left;
-    height:58px;
-    font-size:26px;
-    line-height:56px;
-    padding-left:200px;
-  }
-  .nav {
-    position: fixed;
-    background: #621ac1;
-    color: #fff;
-    width: 100%;
-    height: 58px;
-    z-index: 9999;
-    top: 0;
-    & .nav-wap{
-      float: right;
-      padding-right:200px;
-    }
-    & .nav-list {
-      width: 100px;
-      height: 100%;
-      float: left;
-      line-height: 58px;
-      text-align: center;
-      cursor: pointer;
-      transition: background .45s;
-      &:hover, &.active {
-      }
-    }
-    & .nav-bar {
-      width: 100px;
-      position: absolute;
-      top: 58px;
-      left: 0;
-      height: 2px;
-      background: #fff;
-      transition: left .3s;
-    }
-  }
   .page0{
     margin: 0 auto;
     width: 100%;
@@ -105,18 +41,16 @@ html{
   
   .home-title{
     position: relative;
-    top:50%;
-    margin-top: -65px;
+    top:35%;
   }
   
   .text-description{
     width:100%;
     opacity: 0;
     color: #E1FF9A;
-    font-size:32px;
-    padding-top: 160px;
+    font-size: 2.5em;
+    padding-top: 5vh;
     text-align: center;
-    padding-bottom: 50px;
   }
   .page2-title{
     width:100%;
@@ -126,7 +60,24 @@ html{
     padding-top:160px;
     padding-bottom:50px;
   }
-
+  .page2-description {
+    width: 70vw;
+    margin: 0 auto;
+    position: relative;
+    color: #fbe110;
+    font-size: 1em;
+    padding-top: 1vh;
+    text-align: center;
+  }
+  .page2-description a {
+    color: white;
+    text-decoration: none;
+    font-size: .5em;
+  }
+  a:hover {
+    color: #fbe110;
+    transition: 1s ease;
+  }
   .demo-content{
     margin: 0 auto;
     height: 8em;
@@ -135,7 +86,8 @@ html{
     border-radius: 50%;
   }
   .text-appear{
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-family: arial;
+      font-weight: bold;
       font-size: 1.25em;
       opacity: 1;
       margin: 0 auto;

@@ -7,6 +7,7 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: `Petra's Page`,
+    name: `Petra's Page`,
     siteUrl: `https://petras.page`,
     description: `Petra's personal site for dev projects and other geekery.`,
   },
