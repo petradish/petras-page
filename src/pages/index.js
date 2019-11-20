@@ -1,17 +1,17 @@
 import ScrollAnim from 'rc-scroll-anim';
 import React from 'react';
+import {Link} from 'gatsby';
 import githubLogo from '../static/GitHub-Mark-64px.png'
 import liLogo from '../static/LI-In-Bug.png'
 import portrait from '../static/portrait.jpg'
 const ScrollParallax = ScrollAnim.Parallax;
 const ScrollElement = ScrollAnim.Element;
-const Link = ScrollAnim.Link;
 
 export default class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      css: { backgroundColor: '#3FD8B8', height: 920 },
+      css: { backgroundColor: '#F38EAD', height: 900 },
       cssNoPosition: true,
     };
   }
@@ -80,7 +80,7 @@ export default class Main extends React.Component {
          style={{
            transform: 'translateX(300px)',
            opacity: 0,
-           backgroundColor: '#3FD8B8',
+           backgroundColor: '#F38EAD',
            color: '#fff',
          }}
          className="demo-content parallax-shape"
@@ -137,7 +137,7 @@ export default class Main extends React.Component {
           }}
           className="text-appear"
         >
-          Dance <span className="animate-text"></span> with me!
+          Dance <span id="animate-text"></span> with me!
         </ScrollParallax>
 </div>
       <div className="pack-page"
@@ -152,15 +152,15 @@ export default class Main extends React.Component {
         <div className="page2-description">
         <p>I mostly code in the NERDS stack: Node, Express, React/Redux & Databases with Sequel</p>
         <br></br>
-        <p><a href="http://www.github.com/petradish" target="_blank" ><img src={githubLogo} style={{height: 5 + 'vh'}}/>Github</a></p>
-        <p><a href="http://www.linkedin.com/in/petra-laohakul"target="_blank" ><img src={liLogo} style={{height: 5 + 'vh'}}/>LinkedIn</a></p>
-        <p><a href="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574214708/Personal/Petra_Laohakul_Resume_yugy4q.pdf" target="_blank" ><img src={portrait} style={{height: 5 + 'vh', marginRight: .5 + 'vw'}}/>Resume</a></p>
+        <p><a href="http://www.github.com/petradish" target="_blank" rel="noopener noreferrer" ><img src={githubLogo} style={{height: 5 + 'vh'}} alt='github'/>Github</a></p>
+        <p><a href="http://www.linkedin.com/in/petra-laohakul"target="_blank" rel="noopener noreferrer"><img src={liLogo} style={{height: 5 + 'vh'}} alt='linkedin'/>LinkedIn</a></p>
+        <p><a href="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574214708/Personal/Petra_Laohakul_Resume_yugy4q.pdf" target="_blank" rel="noopener noreferrer" ><img src={portrait} alt='petra' style={{height: 5 + 'vh', marginRight: .5 + 'vw'}}/>Resume</a></p>
         </div>
         <ScrollParallax
           animation={{ x: -300, translateY: -40, opacity: 1, ease: 'linear', playScale: [0, 1.2] }}
           style={{ transform: 'translateY(40px)', color: '#fff' }}
         >
-          <a href='http://octopuss-garden.herokuapp.com' target="_blank" ><img
+          <a href='http://octopuss-garden.herokuapp.com' target="_blank" rel="noopener noreferrer" ><img
             src="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574211219/Personal/UNADJUSTEDNONRAW_thumb_4_fudcjc.jpg"
             style={{ width: 300 }}
             alt="Octopuss-Garden"
@@ -170,7 +170,7 @@ export default class Main extends React.Component {
           animation={{ x: 300, translateY: -150, opacity: 1, ease: 'linear', playScale: [0, 2] }}
           style={{ transform: 'translateY(60px) scale(.8)', color: '#fff' }}
         >
-          <a href='http://cindr.herokuapp.com' target="_blank" ><img
+          <a href='http://cindr.herokuapp.com' target="_blank" rel="noopener noreferrer"><img
             src="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574211229/Personal/UNADJUSTEDNONRAW_thumb_5_dzwrro.jpg"
             style={{ width: 400 }}
             alt="Cindr"
@@ -180,7 +180,7 @@ export default class Main extends React.Component {
           animation={{ x: 200, translateY: -300, opacity: 1, ease: 'linear', playScale: [0, 1.5] }}
           style={{ transform: 'translateY(100px) scale(.9)', color: '#fff' }}
         >
-        <a href='http://github.com/The-Outlaws/Cindr2' target="_blank" >
+        <a href='http://github.com/The-Outlaws/Cindr2' target="_blank" rel="noopener noreferrer" >
           <img
             src="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574212280/Personal/CindrStack_wo4g4r.png"
             style={{ width: 300 }}
@@ -196,7 +196,7 @@ export default class Main extends React.Component {
           className="pack-page"
           location="Scroll-Pack"
           animation={{
-            backgroundColor: '#3FD8B8',
+            backgroundColor: '#F38EAD',
             playScale: [1, 2],
             onStart: () => { this.setCss('start'); },
             onCompleteBack: () => { this.setCss('back complete'); },
@@ -208,7 +208,7 @@ export default class Main extends React.Component {
             animation={{ translateX: '0%', playScale: [1, 2] }}
             style={{
               transform: 'translateX(-100%)',
-              backgroundColor: '#F38EAD',
+              backgroundColor: '#3FD8B8',
               width: '100%',
               height: '100%',
               position: 'absolute',
@@ -221,13 +221,30 @@ export default class Main extends React.Component {
             style={{
               transform: 'translateY(300px)',
               color: '#fbe110',
-              fontSize: '3em',
               textAlign: 'center',
             }}
           >
-            Interested in working with me?<p>Send a message at <a href = "mailto: petradish@gmail.com">petradish@gmail.com.</a></p>
+          
+            <div className='contact-text'>Get in touch at <a href = "mailto: petradish@gmail.com">petradish@gmail.com</a></div>
           </ScrollParallax>
+  
+          
+          <ScrollParallax
+         animation={{ y: 25, x: 100, opacity: 1 }}
+          style={{
+            transform: 'translateX(50vw)',
+            opacity: 0,
+            color: '#621ac1'
+          }}
+          className="text-appear"
+        >
+          <Link to="/about">About Me</Link><span> | </span><a href="http://www.github.com/petradish" target="_blank" rel="noopener noreferrer" ><img src={githubLogo} style={{height: 4 + 'vh'}} alt='github'/>Github</a>
+          <span> | </span><a href="http://www.linkedin.com/in/petra-laohakul"target="_blank" rel="noopener noreferrer"><img src={liLogo} style={{height: 4 + 'vh'}} alt='linkedin'/>LinkedIn</a>
+          <span> | </span><a href="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574214708/Personal/Petra_Laohakul_Resume_yugy4q.pdf" target="_blank" rel="noopener noreferrer" ><img src={portrait} alt='petra' style={{height: 4 + 'vh', marginRight: .5 + 'vw'}}/>Resume</a>
         </ScrollParallax>
+
+        </ScrollParallax>
+   
       </ScrollElement>
     </div>);
   }

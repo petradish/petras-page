@@ -53,11 +53,11 @@ html{
     text-align: center;
   }
   .page2-title{
-    width:100%;
+    width: 100%;
     text-align:center;
     color:#fff;
-    font-size:2.5em;
-    padding-top:160px;
+    font-size:2.3em;
+    padding-top:150px;
     padding-bottom:50px;
   }
   .page2-description {
@@ -94,7 +94,12 @@ html{
       margin-top: -2em;
       width: 45vw;
   }
-  span:before {
+  .text-appear a{
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+  }
+  #animate-text::before {
       content: 'Brazilian Zouk';
       animation: animate infinite 12s;
   }
@@ -115,7 +120,14 @@ html{
         content: 'anything';
     }
   }
-
+.contact-text {
+  font-size: 2em;
+  margin: 0 auto;
+  max-width: 90vw;
+}
+.contact-text a {
+  text-decoration: none;
+}
   .page-title{
       font-size: 7em;
       color: #fff;
