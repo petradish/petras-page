@@ -12,13 +12,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`),
-      },
-    },
-    {
       resolve: `gatsby-plugin-favicon`,
       options: {
         logo: "./src/favicon.png",
