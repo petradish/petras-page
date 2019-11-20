@@ -62,7 +62,8 @@ html{
     margin: 0 auto;
     position: relative;
     color: #fbe110;
-    font-size: 1em;
+    font-size: .8em;
+    font-weight: bold;
     padding-top: 1vh;
     text-align: center;
   }
@@ -148,3 +149,4 @@ html{
   .navbar {
     display: none !important;
   }
+  /* @media only screen and (max-width: 600px)  */
