@@ -1,9 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 import Container from "../components/container"
+import githubLogo from '../static/GitHub-Mark-64px.png'
+import liLogo from '../static/LI-In-Bug.png'
+import portrait from '../static/portrait.jpg'
 export default () => (
     <Container>
-<Link to="/" className='text-appear'>Home</Link>
+<Link to="/">Home</Link><span> | </span><a href="http://www.github.com/petradish" target="_blank" rel="noopener noreferrer" ><img src={githubLogo} style={{height: 4 + 'vh', marginRight: .5 + 'vw'}} alt='github'/>Github</a>
+          <span> | </span><a href="http://www.linkedin.com/in/petra-laohakul"target="_blank" rel="noopener noreferrer"><img src={liLogo} style={{height: 4 + 'vh', marginRight: .5 + 'vw'}} alt='linkedin'/>LinkedIn</a>
+          <span> | </span><a href="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574214708/Personal/Petra_Laohakul_Resume_yugy4q.pdf" target="_blank" rel="noopener noreferrer" ><img src={portrait} alt='petra' style={{height: 4 + 'vh', marginRight: .5 + 'vw'}}/>Resume</a>
     <h1>About Petra</h1>
     <h2>She's a nerd. Ask her anything.</h2>
     <p>Born and raised in Jackson Heights, Queens, to a family of Thai immigrants (hence the fun last name), I was taught to work hard and keep out of trouble. I listened to the wisdom of my parents, but I also learned to live a little more dangerously and a lot more passionately.</p>
