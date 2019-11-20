@@ -11,7 +11,7 @@ module.exports = {
     siteUrl: `https://petras.page`,
     description: `Petra's personal site for dev projects and other geekery.`,
   },
-  plugins: [
+  plugins: [`gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-favicon`,
       options: {

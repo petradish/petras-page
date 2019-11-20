@@ -1,6 +1,7 @@
 import ScrollAnim from 'rc-scroll-anim';
 import React from 'react';
 import {Link} from 'gatsby';
+import { Helmet } from "react-helmet"
 import githubLogo from '../static/GitHub-Mark-64px.png'
 import liLogo from '../static/LI-In-Bug.png'
 import portrait from '../static/portrait.jpg'
@@ -34,6 +35,10 @@ export default class Main extends React.Component {
   render() {
     return (
     <div>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Petra Laohakul, Developer</title>
+        </Helmet>
       <div className="pack-page page0 ">
         <div className="home-title">
           <div className="page-title">
