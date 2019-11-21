@@ -122,9 +122,8 @@ html{
   }
 .contact-text {
   font-size: 2em;
-  /* font-weight: bold; */
   margin: 0 auto;
-  max-width: 90vw;
+  max-width: 80vw;
 }
 .contact-text a {
   text-decoration: none;

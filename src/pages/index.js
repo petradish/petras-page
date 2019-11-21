@@ -36,7 +36,7 @@ export default class Main extends React.Component {
     return (
     <div>
       <SEO 
-      title='Petra Laohakul, Developer'
+      title='Petra Laohakul'
       description='Petra Laohakul, developer, Latin tutor, nerd: her personal site for dev projects and other geekery.'
       image={portrait}
       />
