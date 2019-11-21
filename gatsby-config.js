@@ -6,10 +6,11 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Petra's Page`,
-    name: `Petra's Page`,
-    siteUrl: `https://petras.page`,
-    description: `Petra's personal site for dev projects and other geekery.`,
+    title: 'Petra Laohakul',
+    titleTemplate: '%s - Developer',
+    url: `https://petras.page`,
+    image: `portrait.jpg`,
+    description: `Petra Laohakul, developer, Latin tutor, nerd: her personal site for dev projects and other geekery.`,
   },
   plugins: [`gatsby-plugin-react-helmet`,
     {

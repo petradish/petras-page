@@ -1,11 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
+import SEO from './SEO'
 import Container from "../components/container"
 import githubLogo from '../static/GitHub-Mark-64px.png'
 import liLogo from '../static/LI-In-Bug.png'
 import portrait from '../static/portrait.jpg'
 export default () => (
     <Container>
+      <SEO 
+      title='Petra Laohakul, Developer'
+      description='Petra Laohakul, developer, Latin tutor, nerd: her personal site for dev projects and other geekery.'
+      image={portrait}
+      />
       <div className='nav'>
         <Link to="/">Home</Link>
           <span> | </span><a href="http://www.github.com/petradish" target="_blank" rel="noopener noreferrer" ><img src={githubLogo} style={{height: 4 + 'vh', marginRight: .5 + 'vw'}} alt='github'/>Github</a>
