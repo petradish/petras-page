@@ -231,7 +231,7 @@ export default class Main extends React.Component {
               width: "100%"
             }}
           >
-            <div className='contact-text'>Get in touch at <a href = "mailto: petradish@gmail.com">petradish@gmail.com</a></div>
+            <div className='contact-text'>Get in touch at <a href="http://www.linkedin.com/in/petra-laohakul"target="_blank" rel="noopener noreferrer"><img src={liLogo} style={{height: 4 + 'vh', marginRight: .5 + 'vw'}} alt='linkedin'/>LinkedIn!</a></div>
           </ScrollParallax>
   
           
@@ -248,7 +248,6 @@ export default class Main extends React.Component {
         >
           <Link to="/about">About Me</Link><span> | </span><a href="http://www.github.com/petradish" target="_blank" rel="noopener noreferrer" ><img src={githubLogo} style={{height: 4 + 'vh', marginRight: .5 + 'vw'}} alt='github'/>Github</a>
           <span> | </span><a href="http://www.linkedin.com/in/petra-laohakul"target="_blank" rel="noopener noreferrer"><img src={liLogo} style={{height: 4 + 'vh', marginRight: .5 + 'vw'}} alt='linkedin'/>LinkedIn</a>
-          <span> | </span><a href="https://res.cloudinary.com/dxllpi9sq/image/upload/v1574214708/Personal/Petra_Laohakul_Resume_yugy4q.pdf" target="_blank" rel="noopener noreferrer" ><img src={portrait} alt='petra' style={{height: 4 + 'vh', marginRight: .5 + 'vw'}}/>Resume</a>
         </ScrollParallax>
 
         </ScrollParallax>
